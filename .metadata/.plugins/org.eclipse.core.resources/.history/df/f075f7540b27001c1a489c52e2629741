@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	ul { background-color: pink; display:flex;justify-content: flex-end;}
+	li { background-color: red; list-style: none; text-align: center; padding: 10px 20px 10px 20px; margin: 0px 0px 0px 5px;}
+	a { text-decoration : none; color: white;}
+	section:first-line { bold; }
+	
+</style>
+</head>
+<body>
+<div style="width:800px; margin: 0 auto" >
+	<ul>
+		<li><a href="#q1">1번 문제로 이동</a></li>
+		<li><a href="#q2">2번 문제로 이동</a></li>
+		<li><a href="#q3">3번 문제로 이동</a></li>
+		<li><a href="#q4">4번 문제로 이동</a></li>
+	</ul>
+	<div>
+		<img src="resources/images/quiz.png" width="800" height="250px">
+	</div>
+<hr>
+	<section>
+	정답 확인 클릭시 정답 보여짐
+	</section>
+		
+</div>
+</body>
+</html>

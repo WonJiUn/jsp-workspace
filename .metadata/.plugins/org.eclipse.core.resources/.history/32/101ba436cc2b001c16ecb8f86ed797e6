@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<script type="text/javascript">
+		var x = 5
+		var y = "5"
+		//== : 타입무시. 문자와 숫자도 비교할 수 있다
+		document.write("x == y : " + (x == y) + "<br>")
+		document.write("x != y : " + (x != y) + "<br>")
+		
+		//=== : 타입과 값을 같이 고려해서 비교함
+		document.write("x === y : " + (x === y) + "<br>")
+		document.write("x !== y : " + (x !== y) + "<br>")
+		
+		var gender = "M"
+		var age = 21
+		if(gender == "M"){
+			if(age >=19){
+				var result = "남자 성인입니다"
+			}
+		}else{
+			var result = "여성입니다"
+		}
+		document.write(result + "<br>")
+		
+		var day
+		var week = new Date().getDay(); //0(일요일) ~ 6(토요일)
+		switch(week){
+		case 0 : day="일요일"; break;
+		case 1 : day="월요일"; break;
+		case 2 : day="화요일"; break;
+		case 3 : day="수요일"; break;
+		case 4 : day="목요일"; break;
+		case 5 : day="금요일"; break;
+		case 6 : day="토요일"; break;
+		}
+		
+		document.write(day + "입니다<br>")
+		
+		for(x=2; x<=5; x++){
+			for(y=1; y<9; y++){
+				document.write(x + "*" + y + "=" + x*y + "<br>")
+			}
+		}
+		
+		var x = 1
+		var sum = 0
+		while(x<=100){
+			sum+=1
+			x++
+		}
+		document.write(sum)
+		
+		var num = prompt('아파트 층 수 입력')
+		document.write("<table border='1'>")
+		for(floor=1; floor>=num; floor++){
+			document.write("<tr><td>" + floor + "01호</td> <td>" + floor + "02호</td> <td>" + floor + "03호</td> <td>"
+					+ floor + "04호</td> </tr>")
+		}
+	</script>
+	
+</body>
+</html>

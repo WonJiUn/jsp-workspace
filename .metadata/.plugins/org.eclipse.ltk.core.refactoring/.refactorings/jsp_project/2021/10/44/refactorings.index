@@ -1,0 +1,12 @@
+1635121439736	Rename resource 'userInformation.jsp'
+1635122743225	Delete element
+1635147188311	Delete element
+1635147239038	Rename type 'BOARDDTO'
+1635147281801	Encapsulate field 'id'
+1635147285022	Encapsulate field 'title'
+1635147288118	Encapsulate field 'contents'
+1635155953414	Encapsulate field 'unmodified_title'
+1635158209495	Rename resource 'board_delete.jsp'
+1635207220175	Delete element
+1635295059772	Copy folder
+1635297563157	Copy folder

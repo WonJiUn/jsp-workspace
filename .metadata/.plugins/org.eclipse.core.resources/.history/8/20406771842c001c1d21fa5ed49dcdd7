@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var city = ['서울', '부산', '대전']
+		var joindata1 = city.join()
+		var joindata2 = city.join('-그리고')
+		document.write('결과 1 : ' + joindata1 + '<br>')
+		document.write('결과 2 : ' + joindata2 + '<br>')
+	
+	</script>
+</body>
+</html>

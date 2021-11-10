@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>Quiz_index<hr>
+	<h1>Home | CARE_LAB</h1>
+	<h3>어서오세요</h3>
+	<h3>반갑습니다</h3>
+	<% 
+		Cookie cookie = new Cookie("firstVisit","firstCookie");
+		cookie.setMaxAge(10);	
+		response.addCookie(cookie); //arr이 null이면 발생하는 오류를 해결하기 위해 삽입한 코드
+		
+		boolean bool = false;
+		Cookie[] cookieArr = request.getCookies();
+		
+		
+			for(Cookie c : cookieArr){
+				//out.print("name : " + c.getName() + " , ");
+				//out.print("value : " + c.getValue() + "<br>");
+				if(c.getName().equals("quizCookie")){
+					bool = true;
+				}else{
+					%>
+					<script type="text/javascript">
+						window.open("popup.jsp","","width=300, height=200, top=500, left=500")
+					</script>
+				<% }
+			}
+		
+	%>
+	
+</body>
+</html>
